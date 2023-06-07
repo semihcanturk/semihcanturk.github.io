@@ -14,11 +14,17 @@ profile:
   #   <p>Your City, State 12345</p>
 
 news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a first year PhD student at <a href='https://mila.quebec/en' rel='external nofollow noopener' target='_blank'>Mila -- Quebec AI Institute</a> and <a href='https://diro.umontreal.ca' rel='external nofollow noopener' target='_blank'>Université de Montréal DIRO</a>, in <a href='http://guywolf.org' rel='external nofollow noopener' target='_blank'> Guy Wolf's group</a>.
+My interests cover theory and applications of machine learning with a focus on graph representation learning and spectral graph theory.
+In addition, I am interested in explainable AI (XAI), domain adaptation, out-of-distribution generalization & reinforcement learning.
+More recently, I have been working on applying GRL on molecular data, improving the scalability of graph neural networks, and self-supervised learning on graphs.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I'm also an ML Engineer at <a href='https://zetane.com' rel='external nofollow noopener' target='_blank'>Zetane Systems</a>, where I focus on XAI and lead ML projects with clients and industry partners.
+
+I completed my MSc also at Mila & UdeM, and previously obtained my BEng from the University of Pennsylvania (Penn).
+I've previously interned at the <a href='https://www.imperial.ac.uk/data-science/' rel='external nofollow noopener' target='_blank'>Imperial College Data Science Institute</a> (distributed computing), <a href=' https://www.sas.com/en_us/home.html' rel='external nofollow noopener' target='_blank'>SAS Analytics</a> (data science) and <a href='https://infotron.com.tr/en/' rel='external nofollow noopener' target='_blank'>InfoTRON</a> (AR/VR).
