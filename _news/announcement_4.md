@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our new preprint <a href='https://arxiv.org/abs/2307.07107' rel='external nofollow noopener' target='_blank'>Graph Positional and Structural Encoder</a> is out on arXiv!
+Our new preprint <a href='https://arxiv.org/abs/2307.07107' rel='external nofollow noopener' target='_blank'>Graph Positional and Structural Encoder (GPSE)</a> is out on arXiv!
