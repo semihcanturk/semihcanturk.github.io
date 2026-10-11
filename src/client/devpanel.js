@@ -31,11 +31,11 @@
   function hideError() { errorBox?.remove(); }
 
   // --- Switching -----------------------------------------------------------
-  const state = { palette: D.palette, typeset: D.typeset, scheme: 'auto', ...store.get('state') };
+  const state = { palette: D.palette, typeset: D.typeset, ...store.get('state') };
+  delete state.scheme; // light/dark is the page's own button now
   function apply() {
     document.querySelectorAll('link[data-palette]').forEach((l) => { l.media = l.dataset.palette === state.palette ? 'all' : 'not all'; });
     document.querySelectorAll('link[data-typeset]').forEach((l) => { l.media = l.dataset.typeset === state.typeset ? 'all' : 'not all'; });
-    if (state.scheme === 'auto') delete root.dataset.theme; else root.dataset.theme = state.scheme;
     store.set('state', state);
     setTimeout(syncColors, 120);
   }
@@ -66,14 +66,13 @@
     <div class="dp-body">
       <label>Palette <select data-k="palette">${opts(D.palettes, state.palette)}</select></label>
       <label>Typeset <select data-k="typeset">${opts(D.typesets, state.typeset)}</select></label>
-      <label>Scheme <select data-k="scheme">${opts(['auto', 'light', 'dark'], state.scheme)}</select></label>
       <div class="dp-colors">${TOKENS.map((t) => `<label><input type="color" data-token="${t}">${t.slice(2)}</label>`).join('')}</div>
       <div class="dp-row">
         <button data-act="copy-theme">Copy site.yaml theme</button>
         <button data-act="copy-colors">Copy colors CSS</button>
         <button data-act="reset">Reset colors</button>
       </div>
-      <div class="dp-note">Color edits are temporary until pasted into theme/palettes/&lt;name&gt;.css.</div>
+      <div class="dp-note">Light/dark: the circle in the top bar. Color edits are temporary until pasted into theme/palettes/&lt;name&gt;.css.</div>
     </div>`;
   document.body.append(panel);
   panel.addEventListener('toggle', () => store.set('open', panel.open));
@@ -108,11 +107,14 @@
     if (!act) return;
     if (act === 'reset') { resetColors(); syncColors(); return; }
     const text = act === 'copy-theme'
-      ? `theme:\n  palette: ${state.palette}\n  typeset: ${state.typeset}\n  color_scheme: ${state.scheme}`
-      : `/* ${state.palette}${root.dataset.theme === 'dark' || (state.scheme === 'auto' && matchMedia('(prefers-color-scheme: dark)').matches) ? ' (dark)' : ''} */\n:root {\n${TOKENS.map((t) => `  ${t}: ${toHex(getComputedStyle(root).getPropertyValue(t))};`).join('\n')}\n}`;
+      ? `theme:\n  palette: ${state.palette}\n  typeset: ${state.typeset}\n  color_scheme: ${root.dataset.theme ?? 'auto'}`
+      : `/* ${state.palette}${root.dataset.theme === 'dark' || (!root.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches) ? ' (dark)' : ''} */\n:root {\n${TOKENS.map((t) => `  ${t}: ${toHex(getComputedStyle(root).getPropertyValue(t))};`).join('\n')}\n}`;
     try { await navigator.clipboard.writeText(text); e.target.textContent = 'Copied'; } catch { prompt('Copy:', text); }
     setTimeout(() => { e.target.textContent = act === 'copy-theme' ? 'Copy site.yaml theme' : 'Copy colors CSS'; }, 1500);
   });
+
+  // Keep the color inputs in step when the page's button switches light/dark.
+  new MutationObserver(() => setTimeout(syncColors, 60)).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
 
   apply();
 })();

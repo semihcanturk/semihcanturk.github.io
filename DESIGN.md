@@ -39,8 +39,9 @@ saffron as the only spot color: one ink, one typeface, one figure.
 The hero is the owner's real co-authorship graph, computed at build time from
 `publications.yaml`: papers are squares, people are circles, and his node is
 his portrait, cropped to a circle in a saffron ring. The layout is seeded by
-Laplacian eigenvectors (a spectral embedding) and relaxed with a force layout,
-and the caption says so in the voice of a paper figure. It is the only
+Laplacian eigenvectors (a spectral embedding) and relaxed with a force layout.
+The caption, in the voice of a paper figure, sticks to what the reader can
+see (counts, squares and circles, me in the middle). It is the only
 self-starting motion: on load it draws outward from his node hop by hop, the
 way messages pass in a GNN. Hover or focus a node to highlight its
 neighbourhood; paper nodes link to their entries.
@@ -53,6 +54,8 @@ neighbourhood; paper nodes link to their entries.
 - Award labels (a paper's Spotlight, a reviewer award) are set in bold
   saffron, the only saffron text.
 - Arriving at a paper from a link gives a brief saffron wash.
+- The light/dark switch in the top bar is a graph node too: hollow (light),
+  half-filled (automatic), filled (dark).
 - The colophon: "Set in Spectral, for obvious reasons."
 
 ## Writing
@@ -97,3 +100,8 @@ headlines.
 - **2026-10-11, later still**: the Contact section is off (it repeated the
   hero); all profile links now sit under the name, and the nav drops Contact.
   `contact` stays available in `site.yaml → sections`.
+- **2026-10-11, after launch**: a color-scheme button for readers (automatic
+  by default, then light or dark), remembered per browser and applied before
+  first paint. Its first click always changes what you see (it goes to the
+  opposite of the system setting first). The dev panel's own scheme select was
+  dropped in favour of it.

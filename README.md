@@ -19,7 +19,8 @@ npm run dev        # http://localhost:4321, reloads as you edit
 ```
 
 The dev page has a **Design** panel in the bottom-right corner (dev only, never
-deployed): switch palettes, typesets and light/dark, and edit colors live.
+deployed): switch palettes and typesets, and edit colors live. Light/dark is the
+small circle in the top bar, the same switch visitors get.
 
 ## Update content
 

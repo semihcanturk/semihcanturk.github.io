@@ -6,13 +6,21 @@ import { markedName } from './_parts.mjs';
 
 const DEFAULT_CAPTION = 'My collaboration graph: {papers} papers (squares) and {people} co-authors (circles).';
 
+// The color-scheme button: a node drawn hollow (light), half-filled (auto)
+// or filled (dark). Hidden until site.js wires it up.
+const SCHEME_ICON = `<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle class="scheme-toggle__disc" cx="8" cy="8" r="6"/><path class="scheme-toggle__half" d="M8 2a6 6 0 0 1 0 12z"/><circle class="scheme-toggle__ring" cx="8" cy="8" r="6"/></svg>`;
+
 export function masthead({ site, profile }) {
   const nav = (site.nav ?? []).map((n) => `<li><a href="${esc(n.href)}">${esc(n.label)}</a></li>`).join('');
+  const scheme = ['light', 'dark'].includes(site.theme?.color_scheme) ? site.theme.color_scheme : 'auto';
   return `
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="masthead">
   <a class="masthead__name" href="#top">${esc(profile.name)}</a>
-  <nav class="masthead__nav" aria-label="Sections"><ul role="list">${nav}</ul></nav>
+  <div class="masthead__end">
+    <nav class="masthead__nav" aria-label="Sections"><ul role="list">${nav}</ul></nav>
+    <button type="button" class="scheme-toggle" data-scheme-toggle data-default="${scheme}" aria-label="Color scheme" hidden>${SCHEME_ICON}</button>
+  </div>
 </header>`;
 }
 

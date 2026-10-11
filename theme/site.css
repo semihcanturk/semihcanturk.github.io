@@ -124,9 +124,32 @@ a:hover { text-decoration-color: var(--accent); text-decoration-thickness: 2px; 
   font-size: var(--step--1);
 }
 .masthead__name { font-style: normal; text-decoration: none; }
+.masthead__end { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3xs) var(--space-m); }
 .masthead__nav ul { display: flex; flex-wrap: wrap; gap: var(--space-3xs) var(--space-m); }
 .masthead__nav a { text-decoration-color: transparent; }
 .masthead__nav a:hover { text-decoration-color: var(--accent); }
+
+/* Color-scheme button: a small node, hollow (light), half (auto), filled (dark). */
+.scheme-toggle {
+  display: inline-grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin: -0.4rem -0.45rem -0.4rem -0.2rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  cursor: pointer;
+}
+.scheme-toggle[hidden] { display: none; }
+.scheme-toggle svg { width: 0.9rem; height: 0.9rem; overflow: visible; }
+.scheme-toggle__ring { fill: none; stroke: currentColor; stroke-width: 1.3; }
+.scheme-toggle__half,
+.scheme-toggle__disc { fill: currentColor; opacity: 0; transition: opacity var(--quick); }
+.scheme-toggle[data-state="auto"] .scheme-toggle__half,
+.scheme-toggle[data-state="dark"] .scheme-toggle__disc { opacity: 1; }
+.scheme-toggle:hover { color: var(--accent); }
 
 /* --- Hero ---------------------------------------------------------------- */
 
@@ -711,7 +734,7 @@ circle.node--me { fill: var(--accent); stroke: var(--ink); stroke-width: 1.5; }
 }
 
 @media print {
-  .masthead__nav, .graph__tip, .skip-link, .hero__caption-hint { display: none; }
+  .masthead__nav, .scheme-toggle, .graph__tip, .skip-link, .hero__caption-hint { display: none; }
   .section__head { position: static; }
   a { text-decoration: none; }
 }

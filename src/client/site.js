@@ -136,6 +136,43 @@
   });
 })();
 
+// --- Color scheme: auto (follow the system), light or dark ----------------
+// The choice is remembered in this browser; the inline script in <head>
+// applies it before the first paint.
+(() => {
+  const btn = document.querySelector('[data-scheme-toggle]');
+  if (!btn) return;
+  const root = document.documentElement;
+  const KEY = 'color-scheme';
+  const system = matchMedia('(prefers-color-scheme: dark)');
+  const fallback = btn.dataset.default;
+  const names = { auto: 'automatic (follows your system)', light: 'light', dark: 'dark' };
+  let saved = null;
+  try { saved = localStorage.getItem(KEY); } catch { /* storage blocked */ }
+  let state = names[saved] ? saved : fallback;
+
+  const next = () => {
+    const sys = system.matches ? 'dark' : 'light';
+    const other = sys === 'dark' ? 'light' : 'dark';
+    return state === 'auto' ? other : state === other ? sys : 'auto';
+  };
+  function render() {
+    if (state === 'auto') root.removeAttribute('data-theme'); else root.dataset.theme = state;
+    btn.dataset.state = state;
+    const n = next();
+    btn.setAttribute('aria-label', `Color scheme: ${names[state]}. Switch to ${names[n]}.`);
+    btn.title = `Color scheme: ${names[state]}. Click for ${n === 'auto' ? 'automatic' : n}.`;
+  }
+  btn.addEventListener('click', () => {
+    state = next();
+    try { state === fallback ? localStorage.removeItem(KEY) : localStorage.setItem(KEY, state); } catch { /* storage blocked */ }
+    render();
+  });
+  system.addEventListener?.('change', render);
+  render();
+  btn.hidden = false;
+})();
+
 // --- BibTeX: show the entry, copy it ---------------------------------------
 document.querySelectorAll('[data-bib-toggle]').forEach((btn) => {
   const panel = document.getElementById(btn.getAttribute('aria-controls'));

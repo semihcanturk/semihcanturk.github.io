@@ -4,7 +4,7 @@ title: Semih Cantürk
 description: >-
   Semih Cantürk is a PhD candidate at Mila and Université de Montréal working on
   geometric and topological deep learning, graph representation learning and
-  machine learning for molecules.
+  machine learning for AI4Science.
 url: https://semihcanturk.github.io   # used for canonical and social-preview links
 lang: en
 
@@ -14,6 +14,8 @@ theme:
   palette: cobalt      # cobalt | graphite | ochre
   typeset: spectral    # spectral | literata | brygada
   color_scheme: auto   # auto (follows the visitor's OS) | light | dark
+                       # This is the default; readers can switch with the small
+                       # circle at the top right, and their browser remembers it.
 
 # Top navigation. Each href points at a section id on the page.
 nav:

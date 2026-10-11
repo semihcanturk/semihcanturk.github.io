@@ -40,10 +40,13 @@ flags: `--widths 1440,390`, `--scheme dark|both`, `--viewport`,
   portrait from `profile.yaml → photo`). Frequent co-authors pull their papers
   more weakly (1/papers^1.2) so shared names don't bunch the papers up.
   `render.mjs`: SVG plus HTML labels, BFS hops for the draw-in animation.
-  The caption claims this method, so keep the two in sync.
+  The caption lives in `site.yaml → graph`; if it ever describes the layout
+  method, keep it in sync with `layout.mjs`.
 - `src/client/site.js` — graph hover/focus (neighbourhood highlight, tooltip
-  placement, runtime label de-overlap) and BibTeX toggle/copy. The page must
-  work without it.
+  placement, runtime label de-overlap), the reader's color-scheme button
+  (auto → light/dark, saved in localStorage `color-scheme`; a tiny inline
+  script in `head.mjs` applies it before paint) and BibTeX toggle/copy. The
+  page must work without it.
 - `src/client/devpanel.js` — dev-only design panel and live reload.
 - `src/lib/text.mjs` — escaping, tiny inline markdown, automatic small caps
   for acronyms (`<span class="caps">`).

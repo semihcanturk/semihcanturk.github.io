@@ -25,6 +25,7 @@ export function head({ site, profile, fonts, styles }) {
   return `<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{var s=localStorage.getItem('color-scheme'),r=document.documentElement;if(s==='light'||s==='dark')r.dataset.theme=s;else if(s==='auto')r.removeAttribute('data-theme')}catch(e){}</script>
 <title>${esc(site.title)}</title>
 <meta name="description" content="${esc(desc)}">
 ${url ? `<link rel="canonical" href="${esc(url)}/">` : ''}
