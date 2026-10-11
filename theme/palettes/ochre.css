@@ -1,0 +1,42 @@
+/* ==========================================================================
+   PALETTE: ochre
+   The bold option: the tiles' ochre frame becomes the page, with cobalt ink
+   and a deep tile-green spot color.
+   ========================================================================== */
+
+:root {
+  --paper: #efd9a2;
+  --ink: #17206a;
+  --ink-soft: #3d4688;
+  --ink-faint: #9a8d6a;
+  --glaze: #e6cb86;
+  --accent: #1f6e50;
+  --accent-soft: #c9c58f;
+  --accent-text: var(--accent);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #17206a;
+    --ink: #f2e2b6;
+    --ink-soft: #c9bf9e;
+    --ink-faint: #4a5196;
+    --glaze: #222c7c;
+    --accent: #e9b23a;
+    --accent-soft: #3b3f6e;
+    --accent-text: var(--accent);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #17206a;
+  --ink: #f2e2b6;
+  --ink-soft: #c9bf9e;
+  --ink-faint: #4a5196;
+  --glaze: #222c7c;
+  --accent: #e9b23a;
+  --accent-soft: #3b3f6e;
+  --accent-text: var(--accent);
+  color-scheme: dark;
+}

@@ -1,0 +1,369 @@
+# Papers. Order doesn't matter: the site sorts them by date, newest first.
+#
+# id        unique slug, used as the link anchor (#gpse-2024) and in news items
+# short     a one-word label for the collaboration graph at the top of the page
+# date      YYYY-MM
+# authors   write your own name exactly as in profile.yaml; add * for equal contribution
+# venue     shown in italics, followed by the year; acronyms in (PARENS) get small caps
+# award     optional, e.g. Spotlight or Oral (set in bold saffron)
+# note      optional, shown after the venue, e.g. a certification
+# featured  true = larger title; a `summary:` is shown beside it on wide screens
+#           (the summaries below are switched off: delete the # signs to show one)
+# links     any labels you like; they are shown in this order (optional:
+#           a paper under review can have none)
+# bibtex    optional; adds a BibTeX button with copy-to-clipboard
+
+- id: path-laplacian-2026
+  title: "Path Laplacian Encodings for Directed Graphs"
+  short: PathLapPE
+  date: 2026-10
+  authors:
+    - Lydia Mezrag*
+    - Semih Cantürk*
+    - Michael Perlmutter
+    - Bastian Rieck
+    - Guy Wolf
+  venue: arXiv preprint
+  featured: true
+  # summary: >-
+  #   PathLapPE is a spectral positional encoding built from the path Laplacian
+  #   of a directed graph. It gives node- and edge-level features that capture
+  #   directional, higher-order structure, improves several architectures on
+  #   node- and graph-level benchmarks, and, unlike magnetic Laplacian
+  #   encodings, needs no directionality hyperparameter to tune.
+  links:
+    PDF: https://arxiv.org/pdf/2610.04657
+    arXiv: https://arxiv.org/abs/2610.04657
+  bibtex: |-
+    @misc{mezrag2026pathlaplacian,
+      title         = {Path Laplacian Encodings for Directed Graphs},
+      author        = {Lydia Mezrag and Semih Cant{\"u}rk and Michael Perlmutter and Bastian Rieck and Guy Wolf},
+      year          = {2026},
+      eprint        = {2610.04657},
+      archivePrefix = {arXiv},
+      primaryClass  = {cs.LG},
+      url           = {https://arxiv.org/abs/2610.04657},
+    }
+
+- id: computational-reducibility-2026
+  title: "Can Computational Reducibility Lead to Transferable Models for Graph Combinatorial Optimization?"
+  short: Reducibility
+  date: 2026-07
+  authors:
+    - Semih Cantürk*
+    - Thomas Sabourin*
+    - Frederik Wenkel
+    - Michael Perlmutter
+    - Guy Wolf
+  venue: International Conference on Machine Learning (ICML)
+  featured: true
+  # summary: >-
+  #   A GNN encoder that pairs GCON message passing with energy-based
+  #   unsupervised losses, plus pretraining and fine-tuning strategies drawn
+  #   from the polynomial-reducibility literature. Models transfer between MVC,
+  #   MIS and MaxClique, and pretraining on all but one task speeds up
+  #   fine-tuning on the remaining one without negative transfer.
+  links:
+    PDF: https://arxiv.org/pdf/2603.02462
+    Code: https://github.com/semihcanturk/COPT-MT
+    arXiv: https://arxiv.org/abs/2603.02462
+  bibtex: |-
+    @inproceedings{canturk2026reducibility,
+      title     = {Can Computational Reducibility Lead to Transferable Models for Graph Combinatorial Optimization?},
+      author    = {Semih Cant{\"u}rk and Thomas Sabourin and Frederik Wenkel and Michael Perlmutter and Guy Wolf},
+      booktitle = {Proceedings of the 43rd International Conference on Machine Learning (ICML)},
+      year      = {2026},
+      url       = {https://arxiv.org/abs/2603.02462},
+    }
+
+- id: nar-position-2026
+  title: "Neural Algorithmic Reasoning Must Explain When Neuralization Adds Value"
+  short: NAR
+  date: 2026-07
+  authors:
+    - Yu He
+    - Robert R. Nerem
+    - Timo Stoll
+    - Semih Cantürk
+    - Dobrik Georgiev
+    - Solveig Wittig
+    - Chendi Qian
+    - Floris Geerts
+    - Stefanie Jegelka
+    - Ellen Vitercik
+    - Yusu Wang
+    - Nikolaos Karalias
+    - Christopher Morris
+  venue: 3rd AI for Math Workshop at ICML
+  note: Position paper
+  links:
+    OpenReview: https://openreview.net/forum?id=A4FI5tZRT4
+  bibtex: |-
+    @inproceedings{he2026nar,
+      title     = {Neural Algorithmic Reasoning Must Explain When Neuralization Adds Value},
+      author    = {Yu He and Robert R. Nerem and Timo Stoll and Semih Cant{\"u}rk and Dobrik Georgiev and Solveig Wittig and Chendi Qian and Floris Geerts and Stefanie Jegelka and Ellen Vitercik and Yusu Wang and Nikolaos Karalias and Christopher Morris},
+      booktitle = {3rd AI for Math Workshop at ICML 2026},
+      year      = {2026},
+      url       = {https://openreview.net/forum?id=A4FI5tZRT4},
+    }
+
+- id: graip-2026
+  title: "GraIP: A Benchmarking Framework For Neural Graph Inverse Problems"
+  short: GraIP
+  date: 2026-01
+  authors:
+    - Semih Cantürk*
+    - Arman Mielke*
+    - Andrei Manolache
+    - Chendi Qian
+    - Antoine Siraudin
+    - Christopher Morris
+    - Mathias Niepert
+    - Guy Wolf
+  venue: arXiv preprint
+  featured: true
+  # summary: >-
+  #   Recasts graph learning tasks such as structure discovery and combinatorial
+  #   optimization as inverse problems: recovering a graph from the outputs it
+  #   produces. GraIP provides datasets, metrics and baselines for rewiring, causal
+  #   discovery and neural relational inference.
+  links:
+    PDF: https://arxiv.org/pdf/2601.18917
+    arXiv: https://arxiv.org/abs/2601.18917
+  bibtex: |-
+    @misc{canturk2026graip,
+      title         = {GraIP: A Benchmarking Framework For Neural Graph Inverse Problems},
+      author        = {Semih Cant{\"u}rk and Arman Mielke and Andrei Manolache and Chendi Qian and Antoine Siraudin and Christopher Morris and Mathias Niepert and Guy Wolf},
+      year          = {2026},
+      eprint        = {2601.18917},
+      archivePrefix = {arXiv},
+      primaryClass  = {cs.LG},
+      url           = {https://arxiv.org/abs/2601.18917},
+    }
+
+- id: graph-foundation-models-2025
+  title: "Towards Graph Foundation Models: A Study on the Generalization of Positional and Structural Encodings"
+  short: Graph FMs
+  date: 2025-02
+  authors:
+    - Billy Joe Franks
+    - Moshe Eliasof
+    - Semih Cantürk
+    - Guy Wolf
+    - Carola-Bibiane Schönlieb
+    - Sophie Fellenz
+    - Marius Kloft
+  venue: Transactions on Machine Learning Research (TMLR)
+  note: Reproducibility Certification
+  featured: true
+  # summary: >-
+  #   How well do learnable positional and structural encodings fine-tune, scale
+  #   and generalize across diverse graph datasets? A study of their potential as
+  #   foundational pre-trained representations for graph learning.
+  links:
+    OpenReview: https://openreview.net/forum?id=mSoDRZXsqj
+    PDF: https://arxiv.org/pdf/2412.07407
+    Code: https://github.com/bjfranks/GPSE
+  bibtex: |-
+    @article{franks2025graphfoundationmodels,
+      title   = {Towards Graph Foundation Models: A Study on the Generalization of Positional and Structural Encodings},
+      author  = {Billy Joe Franks and Moshe Eliasof and Semih Cant{\"u}rk and Guy Wolf and Carola-Bibiane Sch{\"o}nlieb and Sophie Fellenz and Marius Kloft},
+      journal = {Transactions on Machine Learning Research},
+      issn    = {2835-8856},
+      year    = {2025},
+      url     = {https://openreview.net/forum?id=mSoDRZXsqj},
+      note    = {Reproducibility Certification},
+    }
+
+- id: openqdc-2024
+  title: "OpenQDC: Open Quantum Data Commons"
+  short: OpenQDC
+  date: 2024-11
+  authors:
+    - Cristian Gabellini
+    - Nikhil Shenoy
+    - Stephan Thaler
+    - Semih Cantürk
+    - Daniel McNeela
+    - Dominique Beaini
+    - Michael Bronstein
+    - Prudencio Tossou
+  venue: arXiv preprint
+  links:
+    PDF: https://arxiv.org/pdf/2411.19629
+    arXiv: https://arxiv.org/abs/2411.19629
+  bibtex: |-
+    @misc{gabellini2024openqdc,
+      title         = {OpenQDC: Open Quantum Data Commons},
+      author        = {Cristian Gabellini and Nikhil Shenoy and Stephan Thaler and Semih Cant{\"u}rk and Daniel McNeela and Dominique Beaini and Michael Bronstein and Prudencio Tossou},
+      year          = {2024},
+      eprint        = {2411.19629},
+      archivePrefix = {arXiv},
+      primaryClass  = {physics.chem-ph},
+      url           = {https://arxiv.org/abs/2411.19629},
+    }
+
+- id: multifilter-gnns-2024
+  title: "Towards a General Recipe for Combinatorial Optimization with Multi-Filter GNNs"
+  short: GCON
+  date: 2024-11
+  authors:
+    - Frederik Wenkel*
+    - Semih Cantürk*
+    - Stefan Horoi
+    - Michael Perlmutter
+    - Guy Wolf
+  venue: Learning on Graphs Conference (LoG)
+  award: Spotlight
+  featured: true
+  # summary: >-
+  #   GCON is a multi-filter GNN with localized attention for unsupervised
+  #   combinatorial optimization on graphs. It is competitive across max-cut,
+  #   minimum dominating set and maximum clique, and rivals the Gurobi solver on
+  #   max-cut.
+  links:
+    PDF: https://arxiv.org/pdf/2405.20543
+    Code: https://github.com/WenkelF/copt
+  bibtex: |-
+    @inproceedings{wenkel2024general,
+      title     = {Towards a General Recipe for Combinatorial Optimization with Multi-Filter GNNs},
+      author    = {Frederik Wenkel and Semih Cant{\"u}rk and Stefan Horoi and Michael Perlmutter and Guy Wolf},
+      booktitle = {Proceedings of the Third Learning on Graphs Conference (LoG)},
+      series    = {Proceedings of Machine Learning Research},
+      volume    = {269},
+      publisher = {PMLR},
+      year      = {2024},
+      url       = {https://arxiv.org/abs/2405.20543},
+    }
+
+- id: gpse-2024
+  title: "Graph Positional and Structural Encoder"
+  short: GPSE
+  date: 2024-07
+  authors:
+    - Semih Cantürk*
+    - Renming Liu*
+    - Olivier Lapointe-Gagné
+    - Vincent Létourneau
+    - Guy Wolf
+    - Dominique Beaini
+    - Ladislav Rampášek
+  venue: International Conference on Machine Learning (ICML)
+  featured: true
+  # summary: >-
+  #   The first graph encoder that learns rich positional and structural encodings
+  #   to augment any GNN. A single pre-trained GPSE transfers across datasets of
+  #   markedly different distributions and modalities, matching or outperforming
+  #   explicitly computed encodings.
+  links:
+    PDF: https://arxiv.org/pdf/2307.07107
+    Code: https://github.com/G-Taxonomy-Workgroup/GPSE
+    arXiv: https://arxiv.org/abs/2307.07107
+  bibtex: |-
+    @inproceedings{canturk2024gpse,
+      title     = {Graph Positional and Structural Encoder},
+      author    = {Semih Cant{\"u}rk and Renming Liu and Olivier Lapointe-Gagn{\'e} and Vincent L{\'e}tourneau and Guy Wolf and Dominique Beaini and Ladislav Ramp{\'a}{\v{s}}ek},
+      booktitle = {Proceedings of the 41st International Conference on Machine Learning (ICML)},
+      series    = {Proceedings of Machine Learning Research},
+      volume    = {235},
+      publisher = {PMLR},
+      year      = {2024},
+      url       = {https://arxiv.org/abs/2307.07107},
+    }
+
+- id: gtaxogym-2022
+  title: "Taxonomy of Benchmarks in Graph Representation Learning"
+  short: GTaxoGym
+  date: 2022-12
+  authors:
+    - Renming Liu*
+    - Semih Cantürk*
+    - Frederik Wenkel
+    - Sarah McGuire
+    - Xinyi Wang
+    - Anna Little
+    - Leslie O'Bray
+    - Michael Perlmutter
+    - Bastian Rieck
+    - Matthew Hirn
+    - Guy Wolf
+    - Ladislav Rampášek
+  venue: Learning on Graphs Conference (LoG)
+  award: Spotlight
+  featured: true
+  # summary: >-
+  #   A data-driven taxonomy of graph benchmarks based on how GNN performance
+  #   responds to graph perturbations, revealing which dataset characteristics,
+  #   structure or node features, a benchmark actually probes.
+  links:
+    PDF: https://proceedings.mlr.press/v198/liu22a/liu22a.pdf
+    Code: https://github.com/G-Taxonomy-Workgroup/GTaxoGym
+    arXiv: https://arxiv.org/abs/2206.07729
+  bibtex: |-
+    @inproceedings{liu2022taxonomy,
+      title     = {Taxonomy of Benchmarks in Graph Representation Learning},
+      author    = {Liu, Renming and Cant{\"u}rk, Semih and Wenkel, Frederik and McGuire, Sarah and Wang, Xinyi and Little, Anna and O'Bray, Leslie and Perlmutter, Michael and Rieck, Bastian and Hirn, Matthew and Wolf, Guy and Ramp{\'a}{\v{s}}ek, Ladislav},
+      booktitle = {Proceedings of the First Learning on Graphs Conference (LoG)},
+      series    = {Proceedings of Machine Learning Research},
+      volume    = {198},
+      pages     = {6:1--6:25},
+      editor    = {Rieck, Bastian and Pascanu, Razvan},
+      publisher = {PMLR},
+      year      = {2022},
+      url       = {https://proceedings.mlr.press/v198/liu22a.html},
+    }
+
+- id: graph-learning-datasets-2021
+  title: "Towards a Taxonomy of Graph Learning Datasets"
+  short: Taxonomy
+  date: 2021-12
+  authors:
+    - Renming Liu*
+    - Semih Cantürk*
+    - Frederik Wenkel
+    - Dylan Sandfelder
+    - Devin Kreuzer
+    - Anna Little
+    - Sarah McGuire
+    - Leslie O'Bray
+    - Michael Perlmutter
+    - Bastian Rieck
+    - Matthew Hirn
+    - Guy Wolf
+    - Ladislav Rampášek
+  venue: Data-Centric AI Workshop at NeurIPS
+  links:
+    arXiv: https://arxiv.org/abs/2110.14809
+    Code: https://github.com/G-Taxonomy-Workgroup/GTaxoGym
+  bibtex: |-
+    @article{liu2021towards,
+      title   = {Towards a Taxonomy of Graph Learning Datasets},
+      author  = {Liu, Renming and Cant{\"u}rk, Semih and Wenkel, Frederik and Sandfelder, Dylan and Kreuzer, Devin and Little, Anna and McGuire, Sarah and O'Bray, Leslie and Perlmutter, Michael and Rieck, Bastian and Hirn, Matthew and Wolf, Guy and Ramp{\'a}{\v{s}}ek, Ladislav},
+      journal = {Data-Centric AI Workshop, NeurIPS},
+      year    = {2021},
+      url     = {https://arxiv.org/abs/2110.14809},
+    }
+
+- id: covid-drug-repurposing-2020
+  title: "Machine-Learning Driven Drug Repurposing for COVID-19"
+  short: COVID-19
+  date: 2020-06
+  authors:
+    - Semih Cantürk*
+    - Aman Singh*
+    - Patrick St-Amant
+    - Jason Behrmann
+  venue: arXiv preprint
+  links:
+    PDF: https://arxiv.org/pdf/2006.14707
+    arXiv: https://arxiv.org/abs/2006.14707
+  bibtex: |-
+    @misc{canturk2020drug,
+      title         = {Machine-Learning Driven Drug Repurposing for COVID-19},
+      author        = {Semih Cant{\"u}rk and Aman Singh and Patrick St-Amant and Jason Behrmann},
+      year          = {2020},
+      eprint        = {2006.14707},
+      archivePrefix = {arXiv},
+      primaryClass  = {cs.LG},
+      url           = {https://arxiv.org/abs/2006.14707},
+    }

@@ -1,0 +1,17 @@
+{
+  "name": "semihcanturk-website",
+  "private": true,
+  "type": "module",
+  "description": "Personal website of Semih Cantürk. Content in content/*.yaml, design tokens in theme/.",
+  "scripts": {
+    "dev": "node src/dev.mjs",
+    "build": "node src/build.mjs",
+    "shot": "node src/shot.mjs"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

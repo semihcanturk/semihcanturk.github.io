@@ -1,0 +1,53 @@
+# Site-wide settings.
+
+title: Semih Cantürk
+description: >-
+  Semih Cantürk is a PhD candidate at Mila and Université de Montréal working on
+  geometric and topological deep learning, graph representation learning and
+  machine learning for molecules.
+url: https://semihcanturk.github.io   # used for canonical and social-preview links
+lang: en
+
+# Look and feel. Palettes live in theme/palettes/, typesets in theme/typesets/.
+# Run `npm run dev` and use the panel in the corner to try them live.
+theme:
+  palette: cobalt      # cobalt | graphite | ochre
+  typeset: spectral    # spectral | literata | brygada
+  color_scheme: auto   # auto (follows the visitor's OS) | light | dark
+
+# Top navigation. Each href points at a section id on the page.
+nav:
+  - { label: About, href: "#about" }
+  - { label: Papers, href: "#papers" }
+  - { label: Experience, href: "#experience" }
+  - { label: Talks, href: "#talks" }
+
+# Sections in page order. Remove a line to hide that section (also available:
+# contact, a closing section with your email and all links).
+# Brackets set sections side by side:
+#   [about, education]            a pair: the second runs in a narrow column
+#                                 beside the first
+#   [teaching, service, awards]   three: a compact spread of short columns
+sections:
+  - hero
+  - [about, education]
+  - news
+  - papers
+  - experience
+  - talks
+  - [teaching, service, awards]
+
+# Fig. 1, the collaboration graph at the top, drawn from publications.yaml.
+# {papers} and {people} are filled in with the current counts. flipX / flipY
+# mirror the layout (e.g. to keep its densest corner away from your name).
+graph:
+  flipX: true
+  caption: >-
+    My collaboration graph: {papers} papers (squares) and {people} co-authors
+    (circles), with me in the middle.
+
+news:
+  visible: 5   # this many recent items are shown; older ones fold under "Earlier news"
+
+# Small print at the very bottom. Update it if you change the typeset.
+colophon: >-

@@ -1,0 +1,31 @@
+# Academic service. Each group is shown in the order written here.
+# award: optional (reviewing), e.g. Gold reviewer; set in bold saffron like a
+# paper's Spotlight.
+
+organizing:
+  - what: Graph Signal Processing (GSP) Workshop, 8th edition
+    when: "2025"
+  - what: Learning on Graphs (LoG) Montréal meetup
+    when: "2024"
+
+reviewing:
+  - venue: International Conference on Machine Learning (ICML)
+    when: "2026"
+    award: Gold reviewer
+  - venue: International Conference on Learning Representations (ICLR)
+    when: 2025, 2026
+    award: Top reviewer in 2026
+  - venue: Learning on Graphs Conference (LoG)
+    when: 2022, 2025
+  - venue: IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
+    when: 2023, 2024, and the 2023 special issue on graph learning
+  - venue: NeurIPS Workshop on Symmetry and Geometry in Neural Representations (NeurReps)
+    when: 2023, 2025
+  - venue: Workshop on Topology, Algebra and Geometry in Data Science (TAG-DS)
+    when: ICML 2023, NeurIPS 2025
+  - venue: ICLR Workshop on Geometrical and Topological Representation Learning
+    when: "2022"
+
+leadership:
+  - what: Chair and treasurer of the Penn Preceptorials Committee, a student-run seminar series with Penn faculty
+    when: 2014–2017

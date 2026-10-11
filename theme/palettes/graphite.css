@@ -1,0 +1,42 @@
+/* ==========================================================================
+   PALETTE: graphite
+   A conservative alternative: graphite ink on bright paper, with cobalt
+   taking the accent role.
+   ========================================================================== */
+
+:root {
+  --paper: #fbfbfa;
+  --ink: #23252b;
+  --ink-soft: #5d6069;
+  --ink-faint: #a5a8b0;
+  --glaze: #eceef2;
+  --accent: #2f45b5;
+  --accent-soft: #cdd4f3;
+  --accent-text: var(--accent);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #17181b;
+    --ink: #ececea;
+    --ink-soft: #a9abb1;
+    --ink-faint: #4a4d55;
+    --glaze: #24262b;
+    --accent: #8597f0;
+    --accent-soft: #2b3366;
+    --accent-text: var(--accent);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #17181b;
+  --ink: #ececea;
+  --ink-soft: #a9abb1;
+  --ink-faint: #4a4d55;
+  --glaze: #24262b;
+  --accent: #8597f0;
+  --accent-soft: #2b3366;
+  --accent-text: var(--accent);
+  color-scheme: dark;
+}

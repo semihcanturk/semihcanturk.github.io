@@ -1,0 +1,46 @@
+/* ==========================================================================
+   PALETTE: cobalt (the default)
+   Sampled from the tiles in the portrait: the whole page is printed in one
+   cobalt ink on porcelain, with saffron as the only spot color.
+   Saffron is for marks and fills. The one place it is text (award labels)
+   uses --accent-text, deepened in light mode so it stays readable (3.3:1).
+   Set it to var(--accent) for the exact tile color.
+   ========================================================================== */
+
+:root {
+  --paper: #f3f5f8;       /* porcelain glaze, faintly blue          */
+  --ink: #1a2672;         /* cobalt underglaze: all text             */
+  --ink-soft: #4d5899;    /* secondary text (6:1 on paper)           */
+  --ink-faint: #8c94c4;   /* graph edges, rules, quiet marks         */
+  --glaze: #e3e7f3;       /* pale wash: highlights, hover, selection */
+  --accent: #e7a51c;      /* saffron, from the tiles' ochre          */
+  --accent-soft: #f6dc9c; /* saffron wash                            */
+  --accent-text: #b87a00; /* saffron as bold text (awards)           */
+  color-scheme: light;
+}
+
+/* Dark: the same inks on a night-cobalt ground. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0e1434;
+    --ink: #e7eaf6;
+    --ink-soft: #a7b0dc;
+    --ink-faint: #4f5a99;
+    --glaze: #18214f;
+    --accent: #f0b43c;
+    --accent-soft: #5c4a1c;
+    --accent-text: var(--accent);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0e1434;
+  --ink: #e7eaf6;
+  --ink-soft: #a7b0dc;
+  --ink-faint: #4f5a99;
+  --glaze: #18214f;
+  --accent: #f0b43c;
+  --accent-soft: #5c4a1c;
+  --accent-text: var(--accent);
+  color-scheme: dark;
+}

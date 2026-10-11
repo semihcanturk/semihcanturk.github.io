@@ -1,0 +1,32 @@
+# Talks and tutorials. Order doesn't matter: sorted by date, newest first.
+# date: YYYY-MM or YYYY-MM-DD. kind: optional, e.g. Tutorial or Keynote.
+
+- title: Geometric and Topological Representation Learning
+  kind: Tutorial
+  event: IEEE International Workshop on Machine Learning for Signal Processing (MLSP)
+  place: Istanbul
+  date: 2025-08-31
+
+- title: Towards a General Recipe for Combinatorial Optimization with Multi-Filter GNNs
+  event: LoG 2024 Montréal Meetup, Mila
+  date: 2024-11-25
+
+- title: "Graph Representation Learning: A Gentle Introduction and New Perspectives"
+  event: Université de Montréal
+  date: 2024-09-25
+
+- title: "Graph Representation Learning: A Gentle Introduction and New Perspectives"
+  event: Concordia University
+  date: 2024-03-27
+
+- title: Graph Positional and Structural Encoder
+  event: LoG 2023 Montréal Meetup, Mila
+  date: 2023-12-04
+
+- title: Graph Representation Learning
+  event: Université de Montréal
+  date: 2023-11-09
+
+- title: Graph Representation Learning
+  event: Concordia University
+  date: 2023-03-03

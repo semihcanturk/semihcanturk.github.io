@@ -1,0 +1,95 @@
+# Positions and education, newest first (shown in the order written here).
+#
+# start / end   YYYY or YYYY-MM; end: present for ongoing roles
+# when          optional text that overrides the dates, e.g. "Summer 2016"
+# compact       true = shown as a single line under "Earlier"
+
+positions:
+  - org: LOG group, RWTH Aachen
+    url: https://log-rwth.github.io
+    role: Visiting researcher
+    place: Aachen
+    start: 2025-09
+    end: 2025-12
+    summary: >-
+      Visited Christopher Morris’s group to work on graph representation learning.
+
+  - org: Valence Labs
+    url: https://www.valencelabs.com
+    role: PhD intern, Physical Simulations
+    place: Montréal
+    start: 2024-03
+    end: 2024-12
+    summary: >-
+      Built an equivariant GNN delta-learning framework that exploits the
+      correlation between successive states of molecular dynamics simulations,
+      so smaller interatomic potentials can be used without losing accuracy.
+      Contributed experiments and visualizations to
+      [OpenQDC](#openqdc-2024), an open library of quantum-mechanical datasets.
+
+  - org: Zetane Systems
+    url: https://zetane.com
+    role: Researcher and ML software developer
+    place: Montréal
+    start: 2019
+    end: 2024
+    summary: >-
+      Developed the explainability module of the Zetane Engine for computer vision
+      (class-activation maps, SHAP, LIME), and the data-augmentation and
+      explainability modules of Zetane Protector. Led and supported ML projects with
+      industry partners in robotics, energy, construction and automotive.
+
+  - org: University of Pennsylvania
+    role: Undergraduate researcher, with Victor Preciado and Cassiano Becker
+    place: Philadelphia
+    start: 2018
+    end: 2020
+    summary: >-
+      Built a pipeline that predicts motor tasks from fMRI data with signal
+      processing and LSTMs, which won the Penn Engineering Societal Impact Award;
+      later extended it to mesh-based learning and GNNs.
+
+  - org: InfoTRON
+    role: Software development intern
+    place: Istanbul
+    start: 2017
+    end: 2018
+    compact: true
+    summary: Recognizing and classifying CAD models in AR/VR with ARToolkit and OpenCV.
+
+  - org: Imperial College London
+    role: Undergraduate researcher
+    place: London
+    when: Summer 2016
+    compact: true
+    summary: A distributed system to run acute3D in the Imperial College Data Observatory.
+
+  - org: SAS Analytics
+    role: Data scientist intern
+    place: Istanbul
+    when: Summer 2016
+    compact: true
+    summary: Fraud detection with global partners in the insurance sector.
+
+education:
+  - degree: PhD in Computer Science
+    institution: Mila & Université de Montréal
+    start: 2022
+    end: present
+    summary: Advised by [Guy Wolf](http://guywolf.org).
+
+  - degree: MSc in Computer Science
+    institution: Mila & Université de Montréal
+    start: 2020
+    end: 2022
+    summary: >-
+      Advised by Guy Wolf. Thesis: [*Taxonomy of Datasets in Graph Learning: A
+      Data-Driven Approach to Improve GNN Benchmarking*](https://hdl.handle.net/1866/27933).
+
+  - degree: BSE in Systems Science & Engineering
+    institution: University of Pennsylvania
+    start: 2014
+    end: 2018
+    summary: >-
+      Minors in computer science and mathematics, magna cum laude. Thesis:
+      *Motor Task Prediction through fMRI Data*, advised by Robert Ghrist.

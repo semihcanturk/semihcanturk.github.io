@@ -1,0 +1,39 @@
+/* ==========================================================================
+   TYPESET: spectral (the default)
+   One family throughout: Spectral by Production Type, a screen-first serif.
+   ExtraLight at poster sizes, Regular for reading, italic for meta.
+   Spectral SC supplies true small caps for acronyms (ICML, LoG, …).
+
+   The @import line is moved into <head> by the build. Keep it first.
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Spectral+SC:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+
+:root {
+  --font-display: "Spectral", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-text: "Spectral", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-meta: "Spectral", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --meta-style: italic;          /* dates, venues, captions, nav */
+
+  --weight-display: 200;
+  --weight-light: 300;
+  --weight-text: 400;
+  --weight-medium: 500;
+  --weight-strong: 600;
+  --tracking-display: -0.035em;
+  --tracking-text: 0;
+
+  --figures: oldstyle-nums proportional-nums;
+
+  /* Small caps for acronyms. Spectral SC draws small caps as lowercase, so the
+     text is lowercased and set in that family. */
+  --caps-family: "Spectral SC", "Spectral", Georgia, serif;
+  --caps-transform: lowercase;
+  --caps-variant: normal;
+  --caps-tracking: 0.04em;
+
+  /* The ü in the name is drawn as a two-node graph. These place it over the
+     u, in em of the name's size. Re-tune after changing the display face. */
+  --umlaut-top: 0.08em;
+  --umlaut-width: 0.36em;
+  --umlaut-shift: 0.005em;       /* nudge right (+) or left (−) */
+}

@@ -1,0 +1,68 @@
+# Newest first. `date` is YYYY-MM.
+# Text accepts [links](https://…), **bold** and *italic*.
+# Link to one of your papers on this page with its id, e.g. [GPSE](#gpse-2024).
+
+- date: 2026-10
+  text: >-
+    New preprint with Lydia Mezrag: [Path Laplacian Encodings for Directed
+    Graphs](#path-laplacian-2026), a spectral positional encoding that keeps
+    edge direction.
+
+- date: 2026-07
+  text: >-
+    At ICML 2026 in Seoul: [Can Computational Reducibility Lead to Transferable
+    Models for Graph Combinatorial Optimization?](#computational-reducibility-2026)
+    in the main conference, and a [position paper on neural algorithmic
+    reasoning](#nar-position-2026) at the AI for Math workshop.
+
+- date: 2026-01
+  text: >-
+    New preprint: [GraIP](#graip-2026), a benchmarking framework that treats
+    structure discovery and other graph learning tasks as inverse problems.
+
+- date: 2025-09
+  text: >-
+    Gave a tutorial on geometric and topological representation learning at
+    IEEE MLSP 2025 in Istanbul.
+
+- date: 2025-09
+  text: >-
+    Started a fall visit to Christopher Morris’s
+    [LOG group at RWTH Aachen](https://log-rwth.github.io).
+
+- date: 2025-02
+  text: >-
+    [Towards Graph Foundation Models](#graph-foundation-models-2025) was accepted
+    to TMLR, with a Reproducibility Certification.
+
+- date: 2024-11
+  text: >-
+    [Towards a General Recipe for Combinatorial Optimization with Multi-Filter GNNs](#multifilter-gnns-2024)
+    was accepted to **LoG 2024** as a **Spotlight**.
+
+- date: 2024-11
+  text: >-
+    Two new preprints: [Towards Graph Foundation Models](#graph-foundation-models-2025),
+    a follow-up to GPSE, and [OpenQDC](#openqdc-2024), a large collection of
+    open-source quantum molecular datasets developed at Valence Labs.
+
+- date: 2024-05
+  text: "[GPSE](#gpse-2024) was accepted to **ICML 2024**."
+
+- date: 2024-01
+  text: >-
+    Awarded the Université de Montréal PhD Scholarship in Artificial Intelligence
+    (*Bourse en intelligence artificielle des ESP*).
+
+- date: 2023-07
+  text: >-
+    Our preprint [Graph Positional and Structural Encoder](#gpse-2024) (GPSE) is out
+    on arXiv.
+
+- date: 2023-05
+  text: "My [MSc thesis](https://hdl.handle.net/1866/27933) is published."
+
+- date: 2022-09
+  text: >-
+    Submitted my MSc thesis and started my PhD at Mila and UdeM in
+    [Guy Wolf’s group](http://guywolf.org).

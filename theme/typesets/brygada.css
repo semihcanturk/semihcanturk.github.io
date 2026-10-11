@@ -1,0 +1,32 @@
+/* ==========================================================================
+   TYPESET: brygada
+   Two voices: Brygada 1918, a lively revival of a Polish book face, for
+   display and reading; Schibsted Grotesk for dates, venues and navigation.
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Schibsted+Grotesk:ital,wght@0,400..600;1,400..600&display=swap");
+
+:root {
+  --font-display: "Brygada 1918", Georgia, serif;
+  --font-text: "Brygada 1918", Georgia, serif;
+  --font-meta: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --meta-style: normal;
+
+  --weight-display: 400;
+  --weight-light: 400;
+  --weight-text: 400;
+  --weight-medium: 500;
+  --weight-strong: 700;
+  --tracking-display: -0.03em;
+  --tracking-text: 0;
+
+  --figures: oldstyle-nums proportional-nums;
+
+  --caps-family: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --caps-transform: none;
+  --caps-variant: normal;
+  --caps-tracking: 0.02em;
+
+  --umlaut-top: 0.1em;
+  --umlaut-width: 0.36em;
+  --umlaut-shift: 0em;
+}

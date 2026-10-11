@@ -1,0 +1,55 @@
+# Who you are. Text fields accept [links](https://…), **bold** and *italic*.
+
+name: Semih Cantürk
+pronouns: he/him
+
+# The line under your name at the top of the page.
+position: >-
+  PhD candidate at [Mila](https://mila.quebec/en) and
+  [Université de Montréal](https://diro.umontreal.ca), in
+  [Guy Wolf’s group](http://guywolf.org).
+
+# Paragraphs are separated by a blank line. The first one is set larger.
+bio: |-
+  My research spans the theory and applications of geometric and topological deep
+  learning, with a focus on graph representation learning and spectral graph theory.
+
+  I’m particularly interested in solving combinatorial optimization problems with
+  graph learning, in geometric learning on biomolecular data, and in positional and
+  structural encodings that make graph learning more effective and scalable. I work
+  in [Guy Wolf’s group](http://guywolf.org) at
+  [Mila – Quebec AI Institute](https://mila.quebec/en) and
+  [Université de Montréal (DIRO)](https://diro.umontreal.ca).
+
+  I did my MSc at Mila and UdeM as well, and my BSE at the University of
+  Pennsylvania. In fall 2025 I was a visiting researcher in Christopher Morris’s
+  [LOG group at RWTH Aachen](https://log-rwth.github.io), and in 2024 a PhD intern
+  at [Valence Labs](https://www.valencelabs.com), working on accelerating molecular
+  dynamics simulations with machine-learned interatomic potentials. Before my PhD
+  I was an ML engineer at [Zetane Systems](https://zetane.com).
+
+# Your portrait is the centre node of Fig. 1, cropped to a circle: use a square
+# image with your face in the middle. `note` appears when someone points at it.
+# `share` is the larger picture used when the page is shared on social media.
+photo:
+  src: assets/portrait.jpg
+  share: assets/photo.jpg
+  alt: Semih smiling in front of a wall of hand-painted blue, yellow and green tiles.
+  note: The colors on this site were sampled from the tiles behind me, from the Alcázar of Seville.
+
+cv: assets/semih-canturk-cv.pdf
+email: semih.canturk@mila.quebec
+
+# Shown under your name, in this order (after Email and CV).
+links:
+  - { label: Google Scholar, url: "https://scholar.google.com/citations?user=k_BbPa4AAAAJ&hl=en" }
+  - { label: GitHub, url: "https://github.com/semihcanturk" }
+  - { label: LinkedIn, url: "https://www.linkedin.com/in/semihcanturk/" }
+  - { label: X, url: "https://x.com/semihcanturk_en" }
+  # - { label: Mastodon, url: "https://sigmoid.social/@semihcanturk" }
+  - { label: Semantic Scholar, url: "https://www.semanticscholar.org/author/2135548959" }
+  - { label: DBLP, url: "https://dblp.org/pid/268/5493.html" }
+  - { label: ORCID, url: "https://orcid.org/0000-0002-2365-9292" }
+
+languages: Turkish, English, conversational Spanish, and some Greek and French
+off_hours: tennis, football, skiing, guitar, literature, history and anthropology
